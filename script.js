@@ -120,7 +120,7 @@ function renderActivities() {
 
   activities.forEach(activity => {
     const activityDate = new Date(activity.date);
-    if (activityDate < weekStart || activityDate > weekEnd) return; // ⬅️ Skip outside week
+    if (activityDate < weekStart || activityDate > weekEnd) return; 
 
     const day = activityDate.toLocaleDateString('en-US', { weekday: 'short' });
     const dayColumn = [...document.querySelectorAll('.dayColumn')].find(col =>
@@ -189,5 +189,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedMode = localStorage.getItem("darkMode");
   if (savedMode === "true") {
     document.body.classList.add("dark-mode");
+  }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const savedMode = localStorage.getItem("darkMode");
+
+  if (savedMode === "true") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
   }
 });
