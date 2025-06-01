@@ -1,0 +1,76 @@
+
+    <div class="overlay">
+  <div class="overlay-content">
+    <div class="overlay-header">
+      <h2 class = "activityHeader">Create Activity</h2>
+      <button class="close-button">X</button>
+    </div>
+
+    <div class="overlay-body">
+      <div class="group"></div>
+      <label class="label">Activity Name (Required)</label>
+      <input 
+        class="input" 
+        type="text" 
+        placeholder="Enter activity name"
+      />
+
+      <div class="group"></div>
+      <label class="label">Activity Type</label>
+      <select class="input">
+        <option value="">Select activity type</option>
+        <option>Study</option>
+        <option>Exercise</option>
+        <option>Work</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <div class="group"></div>
+      <label class="label">Difficulty</label>
+      <select class="input">
+        <option value="">Select difficulty</option>
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+        <option>Demon</option>
+      </select>
+
+      <div class="group"></div>
+      <label class="label">Activity Date (Required)</label>
+      <input 
+        class="input" 
+        type="date"
+        placeholder="Select a date"
+      />
+
+      <div class="group"></div>
+      <label class="label">Activity Time (Required)</label>
+      <label class="label">From:</label>
+      <input 
+        class="input" 
+        type="time"
+        placeholder="Select a time"
+      />
+      <label class="label">To:</label>
+      <input 
+        class="input" 
+        type="time"
+        placeholder="Select a time"
+      />
+
+      <div class="group"></div>
+      <label class="label">Description</label>
+      <textarea 
+        class="input" 
+        placeholder="Enter description"
+      ></textarea>
+
+      <div class="overlay-footer">
+        <button class="cancel-button">Cancel</button>
+        <button class="confirm-button">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>

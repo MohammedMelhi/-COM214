@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timfy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png" />
+
+</head>
+
+<body>
+    <header>
+        <button type="button" class="timify-button" id="toggleDarkMode">
+            <img src="icon.png" alt="Icon" class="button-icon" />
+            Timify
+        </button>
+
+    </header>
+    <div class="homeContainer">
+        <div class="mainContent">
+            <div class="scheduleContainer">
+                <!-- Week Navigation Buttons -->
+                <div class="weekNavigation">
+                    <button class="navButton" id="prevWeek">← Previous Week</button>
+                    <h2 class="weekTitle" id="weekTitle">Week Title</h2>
+                    <button class="navButton" id="nextWeek">Next Week →</button>
+                </div>
+
+
+                <div class="calendarGrid">
+                    <!-- Time header row -->
+                    <div class="timeHeader">
+                        <div class="timeHeaderCell"></div>
+                        <div class="timeHeaderCell">0:00</div>
+                        <div class="timeHeaderCell">2:00</div>
+                        <div class="timeHeaderCell">4:00</div>
+                        <div class="timeHeaderCell">6:00</div>
+                        <div class="timeHeaderCell">8:00</div>
+                        <div class="timeHeaderCell">10:00</div>
+                        <div class="timeHeaderCell">12:00</div>
+                        <div class="timeHeaderCell">14:00</div>
+                        <div class="timeHeaderCell">16:00</div>
+                        <div class="timeHeaderCell">18:00</div>
+                        <div class="timeHeaderCell">20:00</div>
+                        <div class="timeHeaderCell">22:00</div>
+                    </div>
+
+                    <!-- Columns for each day of the week -->
+                    <div class="dayColumn">
+                        <div class="dayHeader">Mon</div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                    </div>
+
+                    <div class="dayColumn">
+                        <div class="dayHeader">Tue</div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                    </div>
+
+                    <!-- Repeat for Wed, Thu, Fri, Sat, Sun -->
+                    <div class="dayColumn">
+                        <div class="dayHeader">Wed</div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                    </div>
+                    <div class="dayColumn">
+                        <div class="dayHeader">Thu</div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                    </div>
+                    <div class="dayColumn">
+                        <div class="dayHeader">Fri</div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                    </div>
+                    <div class="dayColumn">
+                        <div class="dayHeader">Sat</div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                    </div>
+                    <div class="dayColumn">
+                        <div class="dayHeader">Sun</div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                        <div class="timeSlot"></div>
+                    </div>
+                </div>
+
+                <!-- Activity Popup (hidden by default, would be shown via JavaScript) -->
+                <div class="activity-overlay" style="display: none;">
+                    <div class="activity-popup">
+                        <div class="activity-popup-header">
+                            <h2>Activity Name</h2>
+                            <button class="activity-close-button">✖</button>
+                        </div>
+
+                        <div class="activity-popup-body">
+                            <p><span class="activity-label">Date:</span> Monday, January 1, 2023</p>
+                            <p><span class="activity-label">Type:</span> Activity Type</p>
+                            <p><span class="activity-label">Difficulty:</span> Medium</p>
+                            <p><span class="activity-label">Time:</span> 10:00 AM - 11:00 AM</p>
+                            <p><span class="activity-label">Repeats:</span> Weekly</p>
+                            <p><span class="activity-label">Description:</span> Activity description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="sideBar">
+            <div class="sidebarContent">
+                <button type="button" class="addButton">
+                    <div class="Circle">
+                        +
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="overlay-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

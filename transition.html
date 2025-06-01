@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timify</title>
+  <link rel="icon" href="icon.png" type="image/png" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #bf574f;
+      overflow: hidden;
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      transition: opacity 0.7s ease-in-out;
+    }
+
+    video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <span class="logo" id="logoContainer">
+    <video id="logoVideo" autoplay muted playsinline>
+      <source src="transition.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </span>
+
+  <script>
+    const video = document.getElementById("logoVideo");
+    const logoContainer = document.getElementById("logoContainer");
+
+    // Start fade out just before the video ends (e.g., at 2.6s)
+    video.addEventListener("timeupdate", () => {
+      if (video.currentTime >= 2.6 && !logoContainer.classList.contains("fade-out")) {
+        logoContainer.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = "Timify.html";
+        }, 700); // Match the fade-out transition time
+      }
+    });
+  </script>
+</body>
+</html>
