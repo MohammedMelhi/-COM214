@@ -104,12 +104,20 @@ input, select, textarea {
 	}
 
 	.logo video {
-  width: 1000px;         /* Adjust width as needed */
-  height: auto;         /* Maintain aspect ratio */
-  display: block;       /* Removes inline spacing */
-  margin: 0 auto;       /* Centers it horizontally */
-  object-fit: contain;  /* Keeps video fully visible */
+  width: 90%;            /* Makes it responsive */
+  max-width: 1000px;     /* Limits size on large screens */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
+
+@media (max-width: 480px) {
+  .logo video {
+    width: 100%;
+  }
+}
+
 
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {

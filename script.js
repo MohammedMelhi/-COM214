@@ -200,3 +200,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove("dark-mode");
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth < 768) {
+    document.getElementById("mobile-warning").style.display = "block";
+  }
+});
+
