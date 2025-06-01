@@ -202,8 +202,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth < 768) {
+  const isMobile = window.innerWidth < 600; 
+
+  if (isMobile) {
     document.getElementById("mobile-warning").style.display = "block";
   }
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   if (window.innerWidth < 768) {
+//     document.getElementById("mobile-warning").style.display = "block";
+//   }
+// });
 
