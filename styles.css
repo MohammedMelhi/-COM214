@@ -578,3 +578,9 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
   background: #999;
 }
 
+body, body * {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.timify-button .button-icon {
+  transition: filter 0.4s ease;
+}
